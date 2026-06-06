@@ -38,11 +38,17 @@ class OutreachPipeline:
         all_contacts = []
 
         for company in companies:
-
-            contacts = self.prospeo.find_decision_makers(
-                company
-            )
-
+            try:
+                contacts = self.prospeo.find_decision_makers(
+                    company
+                )
+            except Exception as e:
+                print(
+                    f"Failed processing {company}: {e}"
+                )
+                
+                continue
+            
             for contact in contacts:
 
                 all_contacts.append(
