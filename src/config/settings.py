@@ -1,3 +1,4 @@
+# src/config/settings.py
 import os
 from dotenv import load_dotenv
 
@@ -20,5 +21,3 @@ class Settings:
 
 
 settings = Settings()
-
-print(settings.BREVO_SENDER_NAME)
