@@ -1,0 +1,52 @@
+[
+    {
+        "email": "john@hubspot.com",
+        "name": "John Doe",
+        "company_domain": "hubspot.com"
+    },
+    {
+        "email": "jane@hubspot.com",
+        "name": "Jane Smith",
+        "company_domain": "hubspot.com"
+    },
+    {
+        "email": "john@intercom.com",
+        "name": "John Doe",
+        "company_domain": "intercom.com"
+    },
+    {
+        "email": "jane@intercom.com",
+        "name": "Jane Smith",
+        "company_domain": "intercom.com"
+    },
+    {
+        "email": "john@zendesk.com",
+        "name": "John Doe",
+        "company_domain": "zendesk.com"
+    },
+    {
+        "email": "jane@zendesk.com",
+        "name": "Jane Smith",
+        "company_domain": "zendesk.com"
+    },
+    {
+        "email": "john@freshworks.com",
+        "name": "John Doe",
+        "company_domain": "freshworks.com"
+    },
+    {
+        "email": "jane@freshworks.com",
+        "name": "Jane Smith",
+        "company_domain": "freshworks.com"
+    },
+    {
+        "email": "john@zoho.com",
+        "name": "John Doe",
+        "company_domain": "zoho.com"
+    },
+    {
+        "email": "jane@zoho.com",
+        "name": "Jane Smith",
+        "company_domain": "zoho.com"
+    }
+]

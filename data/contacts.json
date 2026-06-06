@@ -1,0 +1,62 @@
+[
+    {
+        "name": "John Doe",
+        "title": "CEO",
+        "linkedin_url": "https://linkedin.com/in/john",
+        "company_domain": "hubspot.com"
+    },
+    {
+        "name": "Jane Smith",
+        "title": "VP Sales",
+        "linkedin_url": "https://linkedin.com/in/jane",
+        "company_domain": "hubspot.com"
+    },
+    {
+        "name": "John Doe",
+        "title": "CEO",
+        "linkedin_url": "https://linkedin.com/in/john",
+        "company_domain": "intercom.com"
+    },
+    {
+        "name": "Jane Smith",
+        "title": "VP Sales",
+        "linkedin_url": "https://linkedin.com/in/jane",
+        "company_domain": "intercom.com"
+    },
+    {
+        "name": "John Doe",
+        "title": "CEO",
+        "linkedin_url": "https://linkedin.com/in/john",
+        "company_domain": "zendesk.com"
+    },
+    {
+        "name": "Jane Smith",
+        "title": "VP Sales",
+        "linkedin_url": "https://linkedin.com/in/jane",
+        "company_domain": "zendesk.com"
+    },
+    {
+        "name": "John Doe",
+        "title": "CEO",
+        "linkedin_url": "https://linkedin.com/in/john",
+        "company_domain": "freshworks.com"
+    },
+    {
+        "name": "Jane Smith",
+        "title": "VP Sales",
+        "linkedin_url": "https://linkedin.com/in/jane",
+        "company_domain": "freshworks.com"
+    },
+    {
+        "name": "John Doe",
+        "title": "CEO",
+        "linkedin_url": "https://linkedin.com/in/john",
+        "company_domain": "zoho.com"
+    },
+    {
+        "name": "Jane Smith",
+        "title": "VP Sales",
+        "linkedin_url": "https://linkedin.com/in/jane",
+        "company_domain": "zoho.com"
+    }
+]

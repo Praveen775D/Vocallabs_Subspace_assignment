@@ -1,5 +1,5 @@
+from utils.file_exporter import save_json
 
-# src/pipeline/outreach_pipeline.py
 from services.ocean_service import OceanService
 from services.prospeo_service import ProspeoService
 from services.eazyreach_service import EazyreachService
@@ -27,7 +27,15 @@ class OutreachPipeline:
 
         companies = self.ocean.get_similar_companies(domain)
 
+        # Save companies
+        save_json(
+            companies,
+            "data/companies.json"
+        )
+
         emails = []
+
+        all_contacts = []
 
         for company in companies:
 
@@ -37,13 +45,32 @@ class OutreachPipeline:
 
             for contact in contacts:
 
+                all_contacts.append(
+                    contact.model_dump()
+                )
+
                 email = self.eazyreach.resolve_email(
                     contact
                 )
 
                 emails.append(email)
 
+        # Save contacts
+        save_json(
+            all_contacts,
+            "data/contacts.json"
+        )
+
         emails = dedupe_emails(emails)
+
+        # Save emails
+        save_json(
+            [
+                email.model_dump()
+                for email in emails
+            ],
+            "data/emails.json"
+        )
 
         print("\nSUMMARY")
 

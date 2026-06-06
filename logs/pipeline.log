@@ -1,3 +1,4 @@
 2026-06-06 19:41:27.915 | INFO     | __main__:<module>:3 - Logger Working
 2026-06-06 22:39:24.562 | INFO     | services.ocean_service:get_similar_companies:11 - Searching similar companies for google.com
 2026-06-06 23:01:17.185 | INFO     | services.ocean_service:get_similar_companies:11 - Searching similar companies for google.com
+2026-06-06 23:24:54.254 | INFO     | services.ocean_service:get_similar_companies:11 - Searching similar companies for google.com
