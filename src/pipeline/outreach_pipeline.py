@@ -1,5 +1,5 @@
 from utils.file_exporter import save_json
-
+from utils.logger import app_logger
 from services.ocean_service import OceanService
 from services.prospeo_service import ProspeoService
 from services.eazyreach_service import EazyreachService
@@ -24,8 +24,15 @@ class OutreachPipeline:
     def run(self, domain):
 
         print(f"\nSeed Domain: {domain}")
+        app_logger.info(
+            f"Pipeline started for {domain}"
+            )
 
         companies = self.ocean.get_similar_companies(domain)
+        
+        app_logger.info(
+            f"{len(companies)} companies found"
+        )
 
         # Save companies
         save_json(
@@ -68,6 +75,10 @@ class OutreachPipeline:
         )
 
         emails = dedupe_emails(emails)
+        
+        app_logger.info(
+            f"{len(emails)} emails generated"
+        )
 
         # Save emails
         save_json(
@@ -111,5 +122,7 @@ class OutreachPipeline:
                 "Automated Outreach",
                 body
             )
-
+        app_logger.info(
+            "Pipeline completed"
+        )
         print("\nPipeline Complete")

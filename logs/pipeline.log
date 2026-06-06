@@ -2,3 +2,8 @@
 2026-06-06 22:39:24.562 | INFO     | services.ocean_service:get_similar_companies:11 - Searching similar companies for google.com
 2026-06-06 23:01:17.185 | INFO     | services.ocean_service:get_similar_companies:11 - Searching similar companies for google.com
 2026-06-06 23:24:54.254 | INFO     | services.ocean_service:get_similar_companies:11 - Searching similar companies for google.com
+2026-06-06 23:42:16.284 | INFO     | pipeline.outreach_pipeline:run:27 - Pipeline started for google.com
+2026-06-06 23:42:16.285 | INFO     | services.ocean_service:get_similar_companies:11 - Searching similar companies for google.com
+2026-06-06 23:42:16.285 | INFO     | pipeline.outreach_pipeline:run:33 - 5 companies found
+2026-06-06 23:42:16.352 | INFO     | pipeline.outreach_pipeline:run:79 - 10 emails generated
+2026-06-06 23:42:19.638 | INFO     | pipeline.outreach_pipeline:run:125 - Pipeline completed
