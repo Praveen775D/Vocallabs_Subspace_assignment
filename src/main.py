@@ -1,7 +1,7 @@
 from services.ocean_service import get_similar_companies
 from services.prospeo_service import get_contacts
 from services.eazyreach_service import get_emails
-from services.brevo import send_email
+from services.brevo_service import send_email
 
 domain = input("Enter company domain: ")
 
