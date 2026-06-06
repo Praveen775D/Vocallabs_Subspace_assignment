@@ -1,4 +1,4 @@
-from services.ocean import get_similar_companies
+from services.ocean_service import get_similar_companies
 from services.prospeo import get_contacts
 from services.eazyreach import get_emails
 from services.brevo import send_email
