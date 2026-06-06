@@ -1,29 +1,16 @@
-from services.ocean_service import get_similar_companies
-from services.prospeo_service import get_contacts
-from services.eazyreach_service import get_emails
-from services.brevo_service import send_email
+from pipeline.outreach_pipeline import OutreachPipeline
 
-domain = input("Enter company domain: ")
 
-companies = get_similar_companies(domain)
+def main():
 
-summary = []
+    domain = input(
+        "Enter Company Domain: "
+    )
 
-for company in companies:
-    contacts = get_contacts(company)
-    emails = get_emails(contacts)
+    pipeline = OutreachPipeline()
 
-    for email in emails:
-        summary.append(email)
+    pipeline.run(domain)
 
-print("Summary before sending:")
-for s in summary:
-    print(s)
 
-confirm = input("Send emails? (y/n): ")
-
-if confirm.lower() == "y":
-    for email in summary:
-        send_email(email)
-
-print("Done")
+if __name__ == "__main__":
+    main()
