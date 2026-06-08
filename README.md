@@ -164,18 +164,23 @@ pip install -r requirements.txt
 Create a `.env` file:
 
 ```env
-OCEAN_API_KEY=
+OCEAN_API_KEY=test_ocean
 
-PROSPEO_API_KEY=
+PROSPEO_API_KEY=test_prospeo
 
-EAZYREACH_API_KEY=
+EAZYREACH_API_KEY=test_eazyreach
 
-BREVO_API_KEY=
+BREVO_API_KEY=test_brevo
 
-BREVO_SENDER_EMAIL=
+BREVO_SENDER_EMAIL=test@gmail.com
 
-BREVO_SENDER_NAME=
+BREVO_SENDER_NAME=Praveen
 ```
+
+These values are placeholders used by the mock service implementations included in this assignment.
+
+The architecture is designed so that real API credentials can be supplied without requiring changes to the pipeline orchestration layer.
+
 
 ---
 
@@ -332,9 +337,28 @@ Logged events include:
 
 ## Assignment Notes
 
-Due to third-party platform access limitations during development, service implementations currently use mock discovery and enrichment layers while preserving production-ready interfaces.
+During development, Ocean.io account access and Eazyreach credit availability were limited for many candidates.
 
-The architecture is intentionally designed so that mock implementations can be replaced with live APIs without changing the orchestration layer.
+As per the assignment FAQ:
+
+* Ocean.io could be replaced with alternative providers.
+* Eazyreach was not mandatory and Prospeo could be used as a replacement.
+
+To ensure completion of the assessment within the given timeline, the project uses mock service implementations while maintaining production-style service interfaces.
+
+The solution focuses on:
+
+* Service-Oriented Architecture
+* Pipeline Orchestration
+* Error Handling
+* Retry Logic
+* Logging
+* Data Export
+* Automated Email Generation
+* Unit Testing
+
+All services are isolated behind dedicated service classes and can be replaced with real API integrations without modifying the pipeline workflow.
+
 
 ---
 
